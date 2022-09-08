@@ -28,9 +28,9 @@ struct SecondView: View {
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
-        Button {
+        Button(action:{
             dismiss()
-        } label: {
+        }){
             Text("押下または、下スワイプで戻る")
         }
     }
