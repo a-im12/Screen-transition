@@ -12,9 +12,9 @@ struct ContentView: View {
     @State private var isShowingView: Bool = false
 
     var body: some View {
-        Button {
+        Button (action:{
             isShowingView.toggle()
-        } label: {
+        }){
             Text("下からぬるっと表示")
         }
         .sheet(isPresented: $isShowingView) {
